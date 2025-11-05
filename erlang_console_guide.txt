@@ -1,0 +1,30 @@
+Erlang Console Access Guide
+
+===========================
+
+ **Installation**
+----------------
+sudo apt install erlang-base
+
+
+**Connecting to Erlang Console**
+-------------------------------
+To connect to a remote Erlang session, use one of the following commands:
+
+erl -name console@master.fp -remsh fp@master.fp
+erl -name console@rt-server1.fp -remsh fp@rt-server1.fp
+
+
+ **Exiting the Console**
+----------------------
+After connecting, you’ll see a prompt like:
+
+(fp@master.fp)1>
+
+To exit the console:
+1. Press Ctrl + G
+2. Type q
+3. Press Enter
+
+
+

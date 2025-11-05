@@ -1,0 +1,21 @@
+[Unit]
+Description=Faceplate SCADA Application Service
+After=network.target
+
+[Service]
+# !! Процесс запускается в foreground
+Type=simple
+
+User=zhalgas
+Group=sudo
+WorkingDirectory=/DATASET/project/scada/faceplate
+
+# !! Запускаем бинарник напрямую
+ExecStart=/DATASET/project/scada/faceplate/bin/faceplate foreground
+
+Restart=always
+RestartSec=5
+LimitNOFILE=200000
+
+[Install]
+WantedBy=multi-user.target
