@@ -41,7 +41,7 @@ echo "Вы можете нажать Enter, чтобы использовать 
 
 # -e позволяет использовать автодополнение, -i задает значение по умолчанию
 read -e -i "fp.service" -p "  1. Введите имя для .service файла: " SERVICE_NAME
-read -e -i "zhalgas" -p "  2. Введите имя пользователя (User): " SERVICE_USER
+read -e -i "master" -p "  2. Введите имя пользователя (User): " SERVICE_USER
 read -e -i "sudo" -p "  3. Введите имя группы (Group): " SERVICE_GROUP
 read -e -i "/DATASET/project/scada/faceplate" -p "  4. Введите полный путь к папке Faceplate: " FACEPLATE_PATH
 
